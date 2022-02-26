@@ -6,7 +6,7 @@
     "award_amount": 10,
     "timers": {
       "weapon": 5000,
-      "cooldown": 5000,
+      "cooldown": 60000,
       "reply": 2000
     }
   },

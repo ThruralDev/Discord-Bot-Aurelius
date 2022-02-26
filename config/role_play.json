@@ -36,7 +36,7 @@
     }
   },
   "timers": {
-    "cool_down": 10000
+    "cool_down": 43200000
   },
   "steal_procent": 0.15
 }

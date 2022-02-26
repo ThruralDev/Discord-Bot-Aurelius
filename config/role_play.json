@@ -1,0 +1,42 @@
+{
+  "messages": {
+    "slaves":{
+      "work": [
+        "You had a successful workday, earning **AMOUNT** Erums \uD83E\uDE99!",
+        "With hard work comes hard profit, you earned **AMOUNT** Erums \uD83E\uDE99.",
+        "Day in, day out... it's all the same. You earned **AMOUNT** Erums \uD83E\uDE99."
+      ],
+      "sticky": "You can earn Erums \uD83E\uDE99 per day with hard work! Type in '!work'. If you have the 'Hash-Provider'-Role, you will earn more then usually. This command has a cooldown-time of 24h."
+    },
+    "assassin": {
+      "success": [
+        "With a swift strike, you kill your target. You collected **AMOUNT** Erums \uD83E\uDE99 for their head.",
+        "Your victim was attacked by a nearby mob, making the assassination easy. You earned **AMOUNT** Erums \uD83E\uDE99 by doing nothing.",
+        "Without you, this guild wouldn't survive. You earned **AMOUNT** Erums \uD83E\uDE99 for your recent kill  and being well-liked in the guild."
+      ],
+      "failed": [
+        "Your victim escaped, there is no reward.",
+        "You mistook the victim's identity and assassinated the wrong target.",
+        "Your assassination was a success, if success involved getting sidetracked watching the ducks."
+      ],
+      "lost": [
+        "You made the kill, but were caught by the Guards. However, freedom was but a bribe away. You lost **AMOUNT** Erums \uD83E\uDE99.",
+        "Your assassination was a success, your escape was not. The guards found you and fined you **AMOUNT** Erums \uD83E\uDE99.",
+        "Licking your own poisoned knife is a bad idea, medical bills cost you **AMOUNT** Erums \uD83E\uDE99"
+      ],
+      "sticky": "You can steal some Erums \uD83E\uDE99 from a Victim. Type in '!target <ping player>'. The higher the balance of the Victim is, the higher is the chance to fail. You can also loose coins, when you have really unluck. This command has a cooldown-time of 24h"
+    },
+    "help": "Type '!market' for interaction with the store and '!send [PingUser] [amountCoins]' to send it to your fren. :-)",
+    "logs": {
+      "success": {
+        "connected": "successfully connected to bot's database in role-play!",
+        "purchase": "successfully updated doc, player had enough coins!",
+        "set_whitelist": "successfully set whitelist!"
+      }
+    }
+  },
+  "timers": {
+    "cool_down": 10000
+  },
+  "steal_procent": 0.15
+}

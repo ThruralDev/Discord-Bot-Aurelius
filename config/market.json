@@ -1,0 +1,82 @@
+{
+  "embed_color": "#0099ff",
+  "items": [
+    {
+      "name":  "Kingslist-Spot",
+      "emoji": "\uD83D\uDCDC",
+      "costs":  2000,
+      "onstock":  100,
+      "purchase_message": "Welcome to the Kingslist <@USERID>! Make sure to submit your wallet in <#KLCHANNELID>"
+    },
+    {
+      "name":  "Magical Pantsu",
+      "emoji": "<:pantsu:931512424555773962>",
+      "costs":  6969,
+      "onstock":  7,
+      "purchase_message":  "Wow you got the best trophy of the world. It smells so good <@USERID>! Have fun with your magical pantsu. It could grant you a wish some day!"
+    },
+    {
+      "name": "TrapMonkie WL",
+      "emoji": "\uD83D\uDCDC",
+      "costs": 1000,
+      "onstock": 10,
+      "purchase_message": "Congratulations <@USERID>, You‘re in the TrapMonkie Whitelist! You don’t have to do anything, we will forward the Information to the Team. Make sure to be in their Discord Server!"
+    }
+  ],
+  "messages": {
+    "help": "Type '!market' for interaction with the store and '!send [PingUser] [amountCoins]' to send it to your fren. :-)",
+    "logs": {
+      "success": {
+        "connected": "successfully connected to bot's database in market!",
+        "purchase": "successfully updated doc, player had enough coins!",
+        "set_whitelist": "successfully set whitelist!"
+      }
+    },
+    "embeds": {
+      "action": {
+        "title": "Hello stranger! How can I help you?",
+        "description": "Choose an action below, to interact with my services. Of course your data like balance will be private and only seen by you."
+      },
+      "items": {
+        "title": "Here are my offers!",
+        "description": "I hope you will find something interesting:"
+      },
+      "insufficient_balance": {
+        "title": "I'm sorry!",
+        "description": "It seems that your pouch isn't big enough for that purchase. Please earn more Erums \uD83E\uDE99 fighting against the terrible monsters."
+      }
+    },
+    "buttons": {
+      "action_items": {
+        "custom_id": "items",
+        "label": "Show Items",
+        "style": "PRIMARY",
+        "emoji": "\uD83D\uDECD"
+      },
+      "action_balance": {
+        "custom_id": "balance",
+        "label": "Show Balance",
+        "style": "PRIMARY",
+        "emoji": "\uD83D\uDCB0"
+      },
+      "buy_kingslist": {
+        "custom_id": "kingslist",
+        "label": "Buy KL-Spot",
+        "style": "PRIMARY",
+        "emoji": "\uD83D\uDCDC"
+      },
+      "buy_pantsu": {
+        "custom_id": "pantsu",
+        "label": "Buy Magical Pantsu",
+        "style": "PRIMARY",
+        "emoji": "<:pantsu:931512424555773962>"
+      },
+      "buy_kingslist_trapmonkey": {
+        "custom_id": "kingslist_trapmonkey",
+        "label": "Buy TrapMonkie WL",
+        "style": "PRIMARY",
+        "emoji": "\uD83D\uDCDC"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "Team Saya",
+    "Team Azume",
+    "Team Zashima"
+  ],
+  "media":{
+    "host": "https://ik.imagekit.io/3meozmkngzi/Monsters/",
+    "images_end": [
+      "saya.png",
+      "azume.png",
+      "zashima.png"
+    ]
+  }
+}

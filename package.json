@@ -1,0 +1,33 @@
+{
+  "name": "discordv13-tut",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "async": "^3.2.3",
+    "body-parser": "^1.19.1",
+    "canvas": "^2.9.0",
+    "discord": "^0.8.2",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.2.0",
+    "emoji-name-map": "^1.2.9",
+    "emoji-unicode": "^2.0.1",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.1.9",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "mocha": "^9.2.0"
+  }
+}

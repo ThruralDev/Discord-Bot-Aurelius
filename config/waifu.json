@@ -1,0 +1,224 @@
+{
+  "riddles": [
+    {
+      "question": "A pack with 3 Eggs costs 0.12$. How many eggs can you get for a dollar?",
+      "answer": "24",
+      "solution": "With 100 cents you can buy 8 packs, 8 * 3 = 24 Eggs."
+    },
+    {
+      "question": "How many Cubes make up a 3x3 Rubik's Cube?",
+      "answer": "27",
+      "solution": "3 x 3 x 3 = 27 Cubes."
+    },
+    {
+      "question": "Result of: 33 - 16",
+      "answer": "17",
+      "solution": "I hope it's clear to you."
+    },
+    {
+      "question": "What number results if you multiply the number of Ignolian kingdoms by 6?",
+      "answer": "42",
+      "solution": "7 * 6 = 42."
+    },
+    {
+      "question": "Yubi and Hiraka walking through the bazar. Yubi buys 8 angel dust cookies, then he deside to give hiraka two of them after he ate 3 of them. How many cookies does Yubi have left?",
+      "answer": "3",
+      "solution": "3 cookies"
+    },
+    {
+      "question": "How many Corners are there on the EoI Crystal?",
+      "answer": "6",
+      "solution": "It has 6 Corners."
+    },
+    {
+      "question": "What's the background color of Azume in the Ignolians' section of gitbook?",
+      "answer": "green/Green",
+      "solution": "Azume has a green background color."
+    },
+    {
+      "question": "Sasari rides his Ushi-Ashi out 4 miles from Stilore, he stops at a lake to harvest fruits before returning to his group in Stilore. How how many miles is he from his group?",
+      "answer": "0",
+      "solution": "0, he returned to the same point."
+    },
+    {
+      "question": "It's hottest summer in Stilore, so Arimura decided to go to the well known 'Colemiota Sands Beach' to cooldown and secretly watch some waifus through his sunglasses and counts the amount of them, which are in the water. 3 goes in, 2 out, 5 in while 2 goes out, and then 3 goes to the water and Arimura is doing hard to focus at the counting. How much of them are in the water now?",
+      "answer": "7",
+      "solution": "7, 3 - 1 + (5 - 2) + 3"
+    },
+    {
+      "question": "How many letters are in Ryzhiy's homeland?",
+      "answer": "7",
+      "solution": "Etheria has 7 Letters"
+    },
+    {
+      "question": "There is a special bakery, located in Etheria. Who owns this bakery?",
+      "answer": "Athel/Aunt Athel/athel/aunt athel",
+      "solution": "Aunt Athel, kindly running the bakery for years."
+    },
+    {
+      "question": "How many years ago did the war end?",
+      "answer": "19",
+      "solution": "19 years"
+    },
+    {
+      "question": "Which of the four races **Kaliphaia**, **Grow**, **Human**, **Draconian**  is ancient?",
+      "answer": "Kaliphaia/kaliphaia",
+      "solution": "Kaliphaia"
+    },
+    {
+      "question": "Which is the basic Element for Fire?",
+      "answer": "3333",
+      "solution": "3333"
+    },
+    {
+      "question": "What is Hirakas Hair Color?",
+      "answer": "grey/Grey/gray/Gray",
+      "solution": "grey"
+    },
+    {
+      "question": "How old is Zashima Kaneho?",
+      "answer": "24",
+      "solution": "24"
+    },
+    {
+      "question": "Which fraction does Sasari belong to?",
+      "answer": "Diabolus/diabolus",
+      "solution": "Diabolus will rule the world!"
+    },
+    {
+      "question": "Which Kingdom got destroyed the most during the war?",
+      "answer": "usdan/Usdan",
+      "solution": "Usdan"
+    },
+    {
+      "question": "There is a famous tavern in Maval. Name it.",
+      "answer": "Kinomonu/kinomonu",
+      "solution": "Kinomonu"
+    },
+    {
+      "question": "There is a city called “Pike Placa”. In which kingdom is this one located?",
+      "answer": "Stilore/stilore",
+      "solution": "Stilore"
+    },
+    {
+      "question": "When you want to earn some extra money, which kingdom are you heading to?",
+      "answer": "Terraria/terraria",
+      "solution": "Terraria"
+    },
+    {
+      "question": "Who is the leader of Team Zashima?",
+      "answer": "Ryzhiy/ryzhiy",
+      "solution": "Ryzhiy"
+    },
+    {
+      "question": "Which of our Guards is the self proclaimed King of Stilore?",
+      "answer": "Kage/kage",
+      "solution": "Kage, before he became a guard"
+    },
+    {
+      "question": "Who is the VP of Stilore's Magic Academy?",
+      "answer": "Ryoto/ryoto",
+      "solution": "Ryoto"
+    },
+    {
+      "question": "What element is 4444?",
+      "answer": "Heal/heal/healing/Healing",
+      "solution": "Heal"
+    },
+    {
+      "question": "What element is 3355?",
+      "answer": "Lava/lava",
+      "solution": "Lava"
+    }
+  ],
+  "text": {
+    "welcomeEmbedTitle": "The Great Waifu War has started!",
+    "welcomeEmbedDescription": "These lovely waifu's want to find a new husbando. Will you be their next one? They're looking for brave, strong warriors that have brains to solve riddles and muscles to slay creatures.\n\nType your answer as fast as you can to score more pantsu. \nDon't give up, your waifus are waiting.",
+    "revealTitle": "ka-ching!",
+    "revealDescription": "You've got the right answer!",
+    "nextQuestionTitle": "Prepare for the next question",
+    "quitTitle": "We have our Winner! Cheers on that together!",
+    "quitDescription": "Cheers to the winners!\nHere's an overview of the battle you fought in. Stay tuned, there's more to come soon!",
+    "scoreboardTitle": "Score-Board:"
+  },
+  "teams": {
+    "Azume": {
+      "score": 0,
+      "image": "https://media.discordapp.net/attachments/929737423225770034/939542630151368714/Azume.png?width=810&height=810",
+      "color": "#fe6e00"
+    },
+    "Saya": {
+      "score": 0,
+      "image": "https://media.discordapp.net/attachments/929737423225770034/939542629685817374/Saya.png?width=810&height=810",
+      "color": "#99d6d7"
+    },
+    "Zashima": {
+      "score": 0,
+      "image": "https://media.discordapp.net/attachments/929737423225770034/939542629425750116/Zashima.png?width=810&height=810",
+      "color": "#deb763"
+    }
+  },
+  "emojis": ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"],
+  "channels": [
+    "938877129788113036",
+    "938876947876950066",
+    "938876898413527042",
+    "932743908646092871"
+  ],
+  "game": {
+    "is_game": false,
+    "can_answer": false,
+    "counter": 0,
+    "rank": [],
+    "rank_amount": 3,
+    "submitted_teams": [],
+    "color_theme": "#A6ACE6",
+    "player_tracker": {
+      "Azume": {},
+      "Saya": {},
+      "Zashima": {}
+    }
+  },
+  "imagesQuestions": [
+    {
+      "id": 1,
+      "url": "https://wallpapercave.com/wp/wp5905203.jpg"
+    },
+    {
+      "id": 2,
+      "url": "https://www.nicepng.com/png/full/11-119906_chitose-thinking-anime-thinking.png"
+    },
+    {
+      "id": 3,
+      "url": "https://animemotivation.com/wp-content/uploads/2020/11/anime-girl-thinking-cute.jpg"
+    },
+    {
+      "id": 4,
+      "url": "https://www.kindpng.com/picc/m/472-4728689_anime-thinking-hd-png-download.png"
+    },
+    {
+      "id": 5,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyjrSGIJLvAmCSNtCi7PIVcAP1PgbHSpywfw"
+    },
+    {
+      "id": 6,
+      "url": "https://i.kym-cdn.com/photos/images/original/001/794/795/cd4.jpg"
+    },
+    {
+      "id": 7,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaEe-cHa9GP--wKQ5jxAOEEHvWSH2JA0dGg"
+    },
+    {
+      "id": 8,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3V8J_7Lryvcj4ljMvgUyMZkyApcG_ap4nhQ"
+    },
+    {
+      "id": 9,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGxOKCOuBqQVoyYoTLUuIe252nx9KwsDSpw"
+    },
+    {
+      "id": 10,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_jNAe3z-mAmPbSYNuAPN2PRj8jqyB81Fxuw"
+    }
+  ]
+}

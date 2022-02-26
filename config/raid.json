@@ -1,0 +1,99 @@
+{
+  "text":{
+    "endBody": "It was a hard fight. Thanks for playing!"
+  },
+  "channel": {
+    "award_amount": 10,
+    "timers": {
+      "weapon": 5000,
+      "cooldown": 0,
+      "reply": 2000
+    }
+  },
+  "creation": {
+    "state": 0,
+    "is_creation": false
+  },
+  "weapons": [
+    {
+      "name": "sword",
+      "accuracy": 1,
+      "offset": 1,
+      "fightMessages": [
+        "You're paralyzed by fear, you attack but fail to act swiftly. You deal a small amount of 1 damage.",
+        "You're paralyzed by fear, you attack but fail to act swiftly. You deal a small amount of 2 damage.",
+        "You're paralyzed by fear, you attack but fail to act swiftly. You deal a small amount of 3 damage.",
+        "You're paralyzed by fear, you attack but fail to act swiftly. You deal a small amount of 4 damage.",
+        "You run to the creature, it attacks but you dodge. With a powerful swing you deal 5 damage.",
+        "You run to the creature, it attacks but you dodge. With a powerful swing you deal 6 damage.",
+        "You run to the creature, it attacks but you dodge. With a powerful swing you deal 7 damage.",
+        "You run to the creature, it attacks but you dodge. With a powerful swing you deal 8 damage.",
+        "Time slows down, you're in the zone. With two powerful slashes you deal 9 damage.",
+        "You're a master of combat, several thrusts of your blade deal 10 damage.",
+        "You went full berserk mode by swinging your sword and dealing 11 crit damage."
+      ]
+    },
+    {
+      "name": "magic",
+      "accuracy": 0.69,
+      "offset": 6,
+      "fightMessages": [
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 6 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 7 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 8 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 9 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 10 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 11 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 12 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 13 damage.",
+        "You take the chance as the monster focuses on your allies. Drawing a glyph beneath him, you trap his foot dealing 14 damage.",
+        "You're a prime student from Stilore's Magic Academy, remembering a complex sequence of glyphs you fire of a small explosion. This deals 15 damage.",
+        "You're a prime student from Stilore's Magic Academy, remembering a complex sequence of glyphs you fire of a small explosion. This deals 16 damage.",
+        "You're a prime student from Stilore's Magic Academy, remembering a complex sequence of glyphs you fire of a small explosion. This deals 17 damage.",
+        "You're a prime student from Stilore's Magic Academy, remembering a complex sequence of glyphs you fire of a small explosion. This deals 18 damage.",
+        "You're a prime student from Stilore's Magic Academy, remembering a complex sequence of glyphs you fire of a small explosion. This deals 19 damage.",
+        "You're a lucky bugger, climbing onto any beasts back may be considered suicide. But you, you dealt 20 damage by causing an explosion on the beast's back."
+      ]
+    }
+  ],
+  "path_start": "https://ik.imagekit.io/3meozmkngzi/Monsters/",
+  "images_path_end": {
+    "monsters": [
+      "slime_water.png",
+      "slime_fire.png",
+      "slime_air.png",
+      "slime_earth.png",
+      "pantsu_king.png"
+    ]
+  },
+  "monster": {
+    "id": null,
+    "index_health": 2,
+    "index_image": 3,
+    "data": [
+      {"request": "Name?", "value": null},
+      {"request": "Description?", "value": null},
+      {"request": "Lifepoints?", "value": null},
+      {"request":  "", "value":  null}
+    ],
+    "is_spawned": false,
+    "data_channel": null,
+    "fightersTotal": 0,
+    "health": {
+      "resetBar": "████████████████████████████",
+      "bar": "████████████████████████████",
+      "sign_full": "█",
+      "sign_empty": "░",
+      "sections": 28,
+      "points_total": null,
+      "points_remain": null,
+      "padding_left": "[»]|",
+      "padding_right": "|[«]",
+      "divisor": null
+    }
+  },
+  "loot":{
+    "last_drop_coin_amount": null,
+    "last_drop_id": null
+  }
+}

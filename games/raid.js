@@ -71,7 +71,6 @@ const Game = {
     async processDamage(_damage) {
         monster.health.points_remain -= _damage
         return monster.health.points_remain <= 0
-
     },
     resetRaid() {
         creation.state = 0
@@ -109,7 +108,7 @@ const Game = {
     async checkUsersCoolDown(_interaction) {
         let timerDiff = mapUserCoolDown.get(_interaction.user.id) - new Date(Date.now())
         if (timerDiff > -(channel.timers.cooldown)) {
-            await _interaction.editReply({
+            await _interaction.reply({
                 content: `You're exhausted! Still rest ${new Date(channel.timers.cooldown - Math.abs(timerDiff)).toISOString().substr(14, 5)} mins left!`,
                 ephemeral: true
             })
@@ -225,8 +224,11 @@ const Monster = {
                         })
                     }
                     if (i.customId === "magic") {
-                        if (!Game.checkUsersCoolDown(i)) return
-                        await Monster.updateMonster(i, weapons[1])
+                        await Game.checkUsersCoolDown(i).then(async (_state) => {
+                            if (_state) {
+                                await Monster.updateMonster(i, weapons[1])
+                            }
+                        })
                     }
                 })
                 collector.on("end", collected => {
@@ -338,7 +340,7 @@ const Loot = {
                 .setDisabled(_disabled))
     },
     async generateDropEmbed() {
-        if (Math.random() < 0.9 || loot.last_drop_id !== null || loot.last_drop_coin_amount !== null) return
+        if (Math.random() < 0 || loot.last_drop_id !== null || loot.last_drop_coin_amount !== null) return
         const randomScope = 7
         const randomStart = 3
         loot.last_drop_coin_amount = Math.floor((Math.random() * randomScope) + randomStart)
@@ -353,6 +355,7 @@ const Loot = {
                     await emb.delete().then(async () => {
                         await Loot.claimLoot(i, emb)
                     })
+                    console.log("was clicked also by..")
                 })
 
                 collector.on("end", collected => {

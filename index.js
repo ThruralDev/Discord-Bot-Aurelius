@@ -7,6 +7,8 @@ const Market = require("./games/market")
 const RolePlay = require("./games/role_play")
 const Simp = require("./games/simp")
 
+// just demo
+
 
 // define bots permissions.
 const client = new Client({

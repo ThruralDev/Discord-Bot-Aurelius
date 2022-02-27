@@ -56,14 +56,11 @@ const Player = {
                 })
                 if (_damage === 0) {
                     if (_weapon.name === "magic") {
-                        _interaction.reply({
-                            content: "You forgot to study, turns out glyphs are hard to remember when you're in battle. You dealt no damage.",
-                            ephemeral: true
-                        })
+                        await _interaction.editReply("You forgot to study, turns out glyphs are hard to remember when you're in battle. You dealt no damage.")
                     }
                     return
                 }
-                _interaction.reply({content: _weapon.fightMessages[_damage - _weapon.offset], ephemeral: true})
+                await _interaction.editReply(_weapon.fightMessages[_damage - _weapon.offset])
             })
     }
 }
@@ -108,7 +105,7 @@ const Game = {
     async checkUsersCoolDown(_interaction) {
         let timerDiff = mapUserCoolDown.get(_interaction.user.id) - new Date(Date.now())
         if (timerDiff > -(channel.timers.cooldown)) {
-            await _interaction.reply({
+            await _interaction.editReply({
                 content: `You're exhausted! Still rest ${new Date(channel.timers.cooldown - Math.abs(timerDiff)).toISOString().substr(14, 5)} mins left!`,
                 ephemeral: true
             })
@@ -216,6 +213,7 @@ const Monster = {
             .then(async (_channel) => {
                 const collector = _channel.createMessageComponentCollector({componentType: "BUTTON"})
                 collector.on("collect", async i => {
+                    await i.deferReply({ephemeral: true})
                     if (i.customId === "sword") {
                         await Game.checkUsersCoolDown(i).then(async (_state) => {
                             if (_state) {
@@ -298,7 +296,7 @@ const Monster = {
         let bonusTop = [25, 15, 5]
         for (let [key, value] of sortedMapPoints) {
             let placeholder = ""
-            if(counter - 1 < 3){
+            if (counter - 1 < 3) {
                 mapUser.set(key, {
                     balance: await mapUser.get(key).balance + bonusTop[counter - 1],
                     name: await Player.getName(_interaction)
@@ -314,7 +312,10 @@ const Monster = {
                 await msg.delete()
             }).then(async () => {
                 await monster.data_channel.send({embeds: [embed]}).then(async () => {
-                    _interaction.reply({content: `You gave him the final Blow! For that you get a Bonus of ${bonusLastHit} Points! \uD83E\uDE99`, ephemeral: true})
+                    await _interaction.editReply({
+                        content: `You gave him the final Blow! For that you get a Bonus of ${bonusLastHit} Points! \uD83E\uDE99`,
+                        ephemeral: true
+                    })
                     _interaction.channel.send(`:tada: **${await Player.getName(_interaction)}** killed the beast with ${_damage} damage! :tada:`)
                 })
                 await Game.rewardUsers().then(async () => {
@@ -340,7 +341,7 @@ const Loot = {
                 .setDisabled(_disabled))
     },
     async generateDropEmbed() {
-        if (Math.random() < 0 || loot.last_drop_id !== null || loot.last_drop_coin_amount !== null) return
+        if (Math.random() < 0.9 || loot.last_drop_id !== null || loot.last_drop_coin_amount !== null) return
         const randomScope = 7
         const randomStart = 3
         loot.last_drop_coin_amount = Math.floor((Math.random() * randomScope) + randomStart)
@@ -351,11 +352,9 @@ const Loot = {
             .then((emb) => {
                 const collector = emb.createMessageComponentCollector({max: 1, componentType: "BUTTON"})
                 collector.on("collect", async i => {
+                    await i.deferReply()
+                    await Loot.claimLoot(i, emb)
                     console.log("claim was clicked by ", i.user.username, " and is the only one who claimed it!")
-                    await emb.delete().then(async () => {
-                        await Loot.claimLoot(i, emb)
-                    })
-                    console.log("was clicked also by..")
                 })
 
                 collector.on("end", collected => {
@@ -369,16 +368,20 @@ const Loot = {
                     .catch(console.error)
             })
     },
-    async claimLoot(_interaction) {
-        await currencySchema.updateOne({playerID: _interaction.user.id}, {
-            $set: {name: await Player.getName(_interaction)}, $inc: {balance: loot.last_drop_coin_amount}
-        }, {upsert: true}).then(async () => {
-            await _interaction.channel.send(`\uD83E\uDE99 **${await Player.getName(_interaction)}** has claimed ${loot.last_drop_coin_amount} coins!`).then(async (el) => {
-                setTimeout(() => {
-                    el.delete()
-                    loot.last_drop_coin_amount = null
-                    loot.last_drop_id = null
-                }, 3000)
+    async claimLoot(_interaction, emb) {
+        await emb.delete().then(async () => {
+            await _interaction.editReply({
+                content: `\uD83E\uDE99 **${await Player.getName(_interaction)}** has claimed ${loot.last_drop_coin_amount} coins!`
+            }).then(async (el) => {
+                await currencySchema.updateOne({playerID: _interaction.user.id}, {
+                    $set: {name: await Player.getName(_interaction)}, $inc: {balance: loot.last_drop_coin_amount}
+                }, {upsert: true}).then(async () => {
+                    setTimeout(() => {
+                        el.delete()
+                        loot.last_drop_coin_amount = null
+                        loot.last_drop_id = null
+                    }, 3000)
+                })
             })
         })
     }
